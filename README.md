@@ -13,9 +13,9 @@ https://medium.com/@rprprasath05/installing-nginx-in-macos-ventura-using-homebre
 
 # Step 3 : nginx.conf setup for proxy and loadbalancer
 # Add the following to the nginx.conf file from /opt/homebrew/etc/nginx/nginx.conf if you are using a mac m1/m2
-
+```
 upstream node_backend {
-	    server localhost:3000 weight=3;  # Server 1 with bigger resources
+	server localhost:3000 weight=3;  # Server 1 with bigger resources
         server localhost:3001;       # Server 2
         server localhost:4000;       # Server 3
 	}
@@ -28,6 +28,7 @@ upstream node_backend {
 		proxy_pass         http://node_backend;
 	}
 }
+```
 
 # Step 4 : App installation
     1. Clone the application, through terminal/ cmd
