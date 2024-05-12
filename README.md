@@ -6,7 +6,7 @@
 https://medium.com/@rprprasath05/installing-nginx-in-macos-ventura-using-homebrew-12b87a900a03
 
 # Step 2 : Setting up the virtual host
-    1. Create a test.com html file in /var/www/test.com/html
+    1. Create a index.html file in /var/www/test.com/html
     2. Add it to the /etc/hosts like this
         127.0.0.1 test.com
     Note: Check this if having issues https://youtu.be/uWG8HygJHbw?feature=shared
